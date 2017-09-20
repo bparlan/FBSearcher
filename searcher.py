@@ -21,10 +21,10 @@ gruplar = ['701784149839644','817517351675883','818667784849260',
             '448879365208324','1575389769372777','387552637953452','1037775422987359']
 adet = len(arabalar) * len(gruplar)
 
-print('Toplam ' + str(adet) + 'adet pencere açılacak, emin misin?')
-print('E - Evet / H - Hayır')
+#print('Toplam ' + str(adet) + 'adet pencere açılacak, emin misin?')
+#print('E - Evet / H - Hayır')
 
 for grup in gruplar:
     for araba in arabalar:
         url = 'https://www.facebook.com/groups/'+grup+'/for_sale_search/?forsalesearchtype=for_sale&availability=available&query='+araba
-        #webbrowser.open(url)
+        webbrowser.open(url)
